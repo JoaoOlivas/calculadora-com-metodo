@@ -11,6 +11,10 @@ public static void main(String[] args){
      double x, y;
      
      
+     System.out.print("insira um numero de 1 a 4" );
+     
+     numero = teclado.nextInt();
+     
      System.out.println("Insira o valore de X ");
      
      x = teclado.nextDouble();
@@ -19,15 +23,46 @@ public static void main(String[] args){
      
      y = teclado.nextDouble();
      
-     System.out.println("a soma dos produtos da: ");
+     switch (numero){
+
+         case 1:
+         
+             System.out.println ("A soma dos valores da " + soma (x, y));
+             
+             break;
+            
+       
+        case 2:
+        
+             System.out.println ("A subtração dos valores da " + subtracao(x, y));
+             
+             break;
+            
+         
+        case 3:
+        
+             System.out.println ("A multiplicação dos valores da " + multiplicacao (x, y));
+             
+             break;
+            
+         
+         case 4:
+         
+             System.out.println ("A divisão dos valores da " +divisao (x,y));
+             
+             break;
+            
+             
+        default:
+        
+                 System.out.println (" esse numero esta invalido");
+                 
+                 break;
+        
+     }
      
-     System.out.println("a subtrção dos produtos da: ");
-     
-     System.out.println("a divição dos produtos da: ");
-     
-     System.out.println("a multiplicação dos produtos da: ");
-     
-    }
+}
+    
      public static double soma (double x , double y){
          
          double soma;
@@ -45,7 +80,6 @@ public static void main(String[] args){
          subtracao = (x - y);
          
          return subtracao;
-         
         }
         
         public static double divisao (double x , double y){
@@ -53,9 +87,8 @@ public static void main(String[] args){
          double divisao;
          
          divisao = (x / y);
-
-         return divisao;
          
+         return divisao;
         }
         
         public static double multiplicacao (double x , double y){
