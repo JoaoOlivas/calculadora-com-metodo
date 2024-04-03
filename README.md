@@ -11,7 +11,7 @@ public static void main(String[] args){
      double x, y;
      
      
-     System.out.print("insira um numero de 1 a 4" );
+     System.out.print("insira um numero de 1(soma), 2(subtração), 3(divisão), 4(multiplicação) " );
      
      numero = teclado.nextInt();
      
